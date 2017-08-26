@@ -14,11 +14,7 @@ begin
 
   exit unless cmd_line.amount
 
-  raise ArgumentError.new(
-    'No exchange rates found, please run with the update option first'
-  ) unless File.exists?(EXCHANGE_RATES_FILE)
-
-  exchange = CurrencyExchange.new('data/rates.csv')
+  exchange = CurrencyExchange.new(EXCHANGE_RATES_FILE)
 
   puts "%s USD = %.2f EUR on %s" % [
     cmd_line.amount,
