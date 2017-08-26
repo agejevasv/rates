@@ -3,7 +3,7 @@ This is a little command line util to convert currency in USD to EUR.
 
 ## Installation
 ```
-git clone git@github.com:electrotek/rates.git
+git clone https://github.com/electrotek/rates.git
 cd rates
 ```
 
